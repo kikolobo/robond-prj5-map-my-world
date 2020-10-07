@@ -8,8 +8,16 @@
 	<param name="odom_model_type" value="diff-corrected"/>
   	<param name="base_frame_id" value="robot_footprint"/>
   	<param name="global_frame_id" value="map"/>
+	<param name="initial_pose_a" value="4.71239"/>
     	<param name="initial_pose_x" value="0"/>
-    	<param name="initial_pose_y" value="0"/>
+    	<param name="initial_pose_y" value="-2.0"/>
+	<param name="min_particles" value="500"/>
+	<param name="max_particles" value="8000"/>
+	<param name="laser_model_type" value="likelihood_field_prob"/>
+	<param name="laser_z_hit" value="0.95"/>
+
+
+
   </node>
 
 <node name="move_base" pkg="move_base" type="move_base" respawn="false" output="screen">
